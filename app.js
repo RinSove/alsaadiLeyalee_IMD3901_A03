@@ -8,7 +8,7 @@ const listen_port = 8080;
 
 app.use((express.static(__dirname + '/public')));
 
-app.get('mobile', function(req, res){
+app.get('desktop', function(req, res){
     res.sendFile(__dirname + '/public/controller.html');
 });
 
